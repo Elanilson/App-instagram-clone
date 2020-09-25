@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "700353450375",
+    "firebase_url": "https://instagram-808e6.firebaseio.com",
+    "project_id": "instagram-808e6",
+    "storage_bucket": "instagram-808e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700353450375:android:99d69193eaeb100bb0c322",
+        "android_client_info": {
+          "package_name": "com.elanilsondejesus.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700353450375-2lo79pvjidnlsgkihlestdgqnjop0img.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elanilsondejesus.instagram",
+            "certificate_hash": "a90933a388a9a97f46e0900b4d518db0f3bc0344"
+          }
+        },
+        {
+          "client_id": "700353450375-cb36bgc8il1958hc9jo34g1r78o92uun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS27YP2SC5tKOUBtiC2JcnL8lAYnue3P4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700353450375-cb36bgc8il1958hc9jo34g1r78o92uun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

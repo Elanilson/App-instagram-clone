@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/white</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#A03D89</color>
+    <color name="cinza_medio">#EBEBEB</color>
+    <color name="corBranca">#FFFFFF</color>
+    <color name="roxo">#f4f4f4</color>
+    <color name="roxoEscuro">#8B05BE</color>
+    <color name="black">#8B05BE</color>
+    <color name="azul_escurp">#32A8C8</color>
+    <color name="amarelo">#F6EF93</color>
+    <color name="mrBlueSky">#8EC4F2</color>
+    <color name="mrBlueSkySynthetic">#BEE4E7</color>
+    <color name="mrBlueSkyEaston">#155CC1</color>
+    <color name="msg_no_notes">#999999</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
+    <color name="white">#FFFFFF</color>
+    <color name="vermelho">#EE3131</color>
+
+
+
+</resources>

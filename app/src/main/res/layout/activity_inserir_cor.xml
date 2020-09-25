@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".alteracao.activity.InserirCorActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_margin="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text=" Quantidade por porção"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView10"
+                app:layout_constraintHorizontal_bias="0.858"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="100dp"
+                android:layout_height="21dp"
+                android:layout_margin="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:text="% Valor diário"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_cor"
+                android:layout_width="249dp"
+                android:layout_height="42dp"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/edit_fibra" />
+
+            <EditText
+                android:id="@+id/edit_energetico"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+            <EditText
+                android:id="@+id/edit_carboidrato"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+            <EditText
+                android:id="@+id/edit_proteina"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+            <EditText
+                android:id="@+id/edit_gorduras"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+            <EditText
+                android:id="@+id/edit_sodio"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+            <EditText
+                android:id="@+id/edit_fibra"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="inserirCor"
+                android:text="@string/txt_inserir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_cor" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="Nome:"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"
+                app:layout_constraintVertical_bias="0.878" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Valor energético:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Carboidrato:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Proteína:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Gorduras totais:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Sódio:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Fibra alimentar:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="287dp" />
+
+            <EditText
+                android:id="@+id/editTextenergeticoValorDiario"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/edit_carboidrato"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/edit_energetico" />
+
+            <EditText
+                android:id="@+id/editTextValorDiarioCarboidrato"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/edit_proteina"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/editTextenergeticoValorDiario"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextValorDiarioProtteeina"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/edit_gorduras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/editTextValorDiarioCarboidrato" />
+
+            <EditText
+                android:id="@+id/editText4ValorDiarioGorddura"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/edit_sodio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/editTextValorDiarioProtteeina" />
+
+            <EditText
+                android:id="@+id/editText5ValorDiarioSodio"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/edit_fibra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/editText4ValorDiarioGorddura" />
+
+            <EditText
+                android:id="@+id/editText6ValorDiarioFibra"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_fibra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/editText5ValorDiarioSodio" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

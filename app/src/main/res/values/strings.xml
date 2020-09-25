@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">More life</string>
+    <string name="lblQtdeTotal">Total de água:</string>
+    <string name="lblBtnBeber">Beber água</string>
+    <string name="lblBtnNotificacao">Salvar</string>
+    <string name="lblIntervalo">Intervalo de tempo</string>
+    <string name="channel_name">HIDRATAR</string>
+    <string name="channel_description">HIDRATACAO</string>
+
+    <string name="total_key">TOTAL</string>
+    <string name="total_hoje_key">TOTAL HOJE</string>
+    <string name="dia_key">DIA</string>
+
+
+    <array name="intervalos">
+        <item>30 min</item>
+        <item>1 hora</item>
+        <item>1 h 30 min</item>
+        <item>2 h</item>
+    </array>
+
+    <string name="show_dialog">Show dialog</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_label">Login</string>
+    <string name="success_login_msg">Login successful</string>
+    <string name="error_login_msg">Please fill any empty fields</string>
+    <string name="title_activity_main_cadastro">MainCadastroActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_home">Notes</string>
+    <string name="msg_no_notes">No notes found!</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+
+    <string name="txt_adicionar">Adicionar</string>
+    <string name="txt_cor">Cor</string>
+    <string name="txt_inserir">Inserir</string>
+
+    <string-array name="opcoes_dialogo_bd">
+        <item>Compartilhar</item>
+        <item>Editar</item>
+        <item>Remover</item>
+        <item>Cadastrar novo</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

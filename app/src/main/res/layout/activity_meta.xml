@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alteracao.activity.MetaActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        />
+
+    <Button
+        android:id="@+id/salvarMeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/roxoEscuro"
+        android:text="Salvar"
+        android:textColor="#F3E6D3D3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/trofeu" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        app:layout_constraintBottom_toTopOf="@+id/editTextData"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="25/06/2020"
+        android:inputType="textPersonName"
+        android:text="16/09/2020"
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="@+id/textView38"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meta"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMeta"
+        app:layout_constraintEnd_toEndOf="@+id/editTextData"
+        app:layout_constraintStart_toStartOf="@+id/editTextData"
+        app:layout_constraintTop_toBottomOf="@+id/editTextData" />
+
+    <EditText
+        android:id="@+id/editTextMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="60"
+        android:inputType="textPersonName"
+        android:text="60"
+        app:layout_constraintBottom_toTopOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView39"
+        app:layout_constraintStart_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recomendações \n 53,3-72,5 Kg"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMeta"
+        app:layout_constraintStart_toStartOf="@+id/editTextMeta"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMeta" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Peso inicial"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPesoInicial"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <EditText
+        android:id="@+id/editTextPesoInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="50"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintEnd_toEndOf="@+id/textView41"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ponto de partida para o \n progresso"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/salvarMeta"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPesoInicial"
+        app:layout_constraintStart_toStartOf="@+id/editTextPesoInicial"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPesoInicial" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
